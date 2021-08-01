@@ -2,6 +2,7 @@ import React from "react";
 import AndroidIcon from "../../images/android.svg";
 import CTFIcon from "../../images/ctf.svg";
 import ReactIcon from "../../images/react.svg";
+import { Button } from "../ButtonElements";
 import {
   ProjectsContainer,
   ProjectsH1,
@@ -10,9 +11,10 @@ import {
   ProjectsIcon,
   ProjectsH2,
   ProjectsP,
+  BtnWrapper,
 } from "./ProjectsElements";
 
-const Projects = () => {
+const Projects = ({ buttonLabel, primary, dark, dark2 }) => {
   return (
     <ProjectsContainer id="projects">
       <ProjectsH1>Personal Projects</ProjectsH1>
@@ -26,6 +28,20 @@ const Projects = () => {
             browser tabs to view and compare prices of groceries through the
             Woolworths Supermarket and Coles Supermarket websites.
           </ProjectsP>
+          <BtnWrapper>
+            <Button
+              to="home"
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact="true"
+              offset={-80}
+              primary={primary ? 1 : 0}
+              dark={dark ? 1 : 0}
+              dark2={dark2 ? 1 : 0}>
+              {buttonLabel}
+            </Button>
+          </BtnWrapper>
         </ProjectsCard>
         <ProjectsCard>
           <ProjectsIcon src={CTFIcon} />
@@ -36,6 +52,20 @@ const Projects = () => {
             (CTF’s) games to learn a variety of skills not formally taught
             through my degree.
           </ProjectsP>
+          <BtnWrapper>
+            <Button
+              to="home"
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact="true"
+              offset={-80}
+              primary={primary ? 1 : 0}
+              dark={dark ? 1 : 0}
+              dark2={dark2 ? 1 : 0}>
+              {buttonLabel}
+            </Button>
+          </BtnWrapper>
         </ProjectsCard>
         <ProjectsCard>
           <ProjectsIcon src={ReactIcon} />
@@ -45,6 +75,20 @@ const Projects = () => {
             library. I have expectations to utilise this website to host and
             better display my Project Portfolio.
           </ProjectsP>
+          <BtnWrapper>
+            <Button
+              to="home"
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact="true"
+              offset={-80}
+              primary={primary ? 1 : 0}
+              dark={dark ? 1 : 0}
+              dark2={dark2 ? 1 : 0}>
+              {buttonLabel}
+            </Button>
+          </BtnWrapper>
         </ProjectsCard>
       </ProjectsWrapper>
     </ProjectsContainer>
