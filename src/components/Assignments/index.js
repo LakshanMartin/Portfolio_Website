@@ -93,10 +93,10 @@ const Assignments = ({ buttonLabel, primary, dark, dark2 }) => {
           <AssignmentsIcon src={ZaraIcon} />
           <AssignmentsH2>Zara Website Redesign</AssignmentsH2>
           <AssignmentsP>
-            I was tasked with developing a control system for a Mars Rover.
-            Various commands were to be relayed to the control system through an
-            externally developed API. This provided a good experience for
-            programming around an API.
+            An optimisation of the Zara Australia website in terms of UI and UX
+            design. This was largely an analysis on the UI and UX of the
+            existing website. The assignment specification limited us to
+            NetBeans and JavaFX with no 3rd party libraries.
           </AssignmentsP>
           <BtnWrapper>
             <Button

@@ -1,5 +1,6 @@
 import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { animateScroll as scroll } from "react-scroll";
 import {
   FooterContainer,
   FooterWrapper,
@@ -10,7 +11,7 @@ import {
 } from "./FooterElements";
 
 const scrollToTop = () => {
-  window.scrollTo(0, 0);
+  scroll.scrollToTop();
 };
 
 const Footer = () => {
