@@ -36,10 +36,15 @@ export const FooterIcons = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 240px;
+  width: 200px;
 `;
 
 export const FooterIconLink = styled.a`
   color: #fff;
-  font-size: 24px;
+  font-size: 30px;
+
+  &:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+  }
 `;

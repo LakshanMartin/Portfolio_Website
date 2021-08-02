@@ -12,12 +12,16 @@ import {
   NavBtnLink,
 } from "./NavbarElements";
 
+const scrollToTop = () => {
+  window.scrollTo(0, 0);
+};
+
 const Navbar = ({ toggle }) => {
   return (
     <>
       <Nav>
         <NavbarContainer>
-          <NavLogo to="/">Lucky</NavLogo>
+          <NavLogo onClick={scrollToTop}>Lucky</NavLogo>
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>

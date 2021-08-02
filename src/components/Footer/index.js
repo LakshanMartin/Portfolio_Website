@@ -9,11 +9,15 @@ import {
   FooterIconLink,
 } from "./FooterElements";
 
+const scrollToTop = () => {
+  window.scrollTo(0, 0);
+};
+
 const Footer = () => {
   return (
     <FooterContainer>
       <FooterWrapper>
-        <FooterLogo to="/">Lucky</FooterLogo>
+        <FooterLogo onClick={scrollToTop}>Lucky</FooterLogo>
         <FooterYear>{new Date().getFullYear()}</FooterYear>
         <FooterIcons>
           <FooterIconLink
