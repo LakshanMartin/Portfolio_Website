@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ProjectsContainer = styled.div`
+export const AssignmentsContainer = styled.div`
   height: 1200px;
   display: flex;
   flex-direction: column;
@@ -17,7 +17,7 @@ export const ProjectsContainer = styled.div`
   }
 `;
 
-export const ProjectsWrapper = styled.div`
+export const AssignmentsWrapper = styled.div`
   max-width: 1000px;
   margin: 0 auto;
   display: grid;
@@ -36,26 +36,26 @@ export const ProjectsWrapper = styled.div`
   }
 `;
 
-export const ProjectsCard = styled.div`
+export const AssignmentsCard = styled.div`
   background: #fff;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   border-radius: 10px;
-  height: 450px;
+  height: 425px;
   padding: 30px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   transition: all 0.2s ease-in-out;
 `;
 
-export const ProjectsIcon = styled.img`
+export const AssignmentsIcon = styled.img`
   height: 160px;
   width: 160px;
   margin-bottom: 10px;
 `;
 
-export const ProjectsH1 = styled.h1`
+export const AssignmentsH1 = styled.h1`
   font-size: 2.5rem;
   color: #fff;
   margin-bottom: 64px;
@@ -65,13 +65,13 @@ export const ProjectsH1 = styled.h1`
   }
 `;
 
-export const ProjectsH2 = styled.h2`
+export const AssignmentsH2 = styled.h2`
   font-size: 1rem;
   margin-bottom: 20px;
   text-align: center;
 `;
 
-export const ProjectsP = styled.p`
+export const AssignmentsP = styled.p`
   font-size: 1rem;
   text-align: center;
 `;

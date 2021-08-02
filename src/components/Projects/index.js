@@ -2,7 +2,7 @@ import React from "react";
 import AndroidIcon from "../../images/android.svg";
 import CTFIcon from "../../images/ctf.svg";
 import ReactIcon from "../../images/react.svg";
-import { Button } from "../ButtonElements";
+import { Button } from "../Constants/ButtonElements";
 import {
   ProjectsContainer,
   ProjectsH1,
@@ -13,6 +13,12 @@ import {
   ProjectsP,
   BtnWrapper,
 } from "./ProjectsElements";
+
+//Method to open links in new tab
+const newTabProjLink = (url) => {
+  const newWindow = window.open(url, "_blank", "noopener", "noreferrer");
+  if (newWindow) newWindow.opener = null;
+};
 
 const Projects = ({ buttonLabel, primary, dark, dark2 }) => {
   return (
@@ -30,6 +36,14 @@ const Projects = ({ buttonLabel, primary, dark, dark2 }) => {
           </ProjectsP>
           <BtnWrapper>
             <Button
+              //Including href just to show web address on hover
+              href="https://github.com/LakshanMartin/Weekly_Specials"
+              style={{ textDecoration: "none" }}
+              onClick={() =>
+                newTabProjLink(
+                  "https://github.com/LakshanMartin/Weekly_Specials"
+                )
+              }
               to="home"
               smooth={true}
               duration={500}
@@ -54,6 +68,12 @@ const Projects = ({ buttonLabel, primary, dark, dark2 }) => {
           </ProjectsP>
           <BtnWrapper>
             <Button
+              //Including href just to show web address on hover
+              href="https://github.com/LakshanMartin/CTF_WriteUps"
+              style={{ textDecoration: "none" }}
+              onClick={() =>
+                newTabProjLink("https://github.com/LakshanMartin/CTF_WriteUps")
+              }
               to="home"
               smooth={true}
               duration={500}
@@ -71,12 +91,20 @@ const Projects = ({ buttonLabel, primary, dark, dark2 }) => {
           <ProjectsIcon src={ReactIcon} />
           <ProjectsH2>Website Portfolio</ProjectsH2>
           <ProjectsP>
-            I began this project as a way to learn JavaScript and the React
+            I created this website as a way to learn JavaScript and the React
             library. I have expectations to utilise this website to host and
             better display my Project Portfolio.
           </ProjectsP>
           <BtnWrapper>
             <Button
+              //Including href just to show web address on hover
+              href="https://github.com/LakshanMartin/Portfolio_Website"
+              style={{ textDecoration: "none" }}
+              onClick={() =>
+                newTabProjLink(
+                  "https://github.com/LakshanMartin/Portfolio_Website"
+                )
+              }
               to="home"
               smooth={true}
               duration={500}

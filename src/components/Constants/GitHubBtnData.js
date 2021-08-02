@@ -1,5 +1,4 @@
-export const projDataOne = {
-  id: "weekly_specials",
+export const githubBtnData = {
   buttonLabel: "GitHub",
   dark: false,
   primary: false,

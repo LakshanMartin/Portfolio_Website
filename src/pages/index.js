@@ -5,7 +5,9 @@ import HeroSection from "../components/HeroSection";
 import InfoSection from "../components/InfoSection";
 import { homeObjOne, homeObjTwo } from "../components/InfoSection/Data";
 import Projects from "../components/Projects";
-import { projDataOne } from "../components/Projects/Data";
+import { githubBtnData } from "../components/Constants/GitHubBtnData";
+import Assignments from "../components/Assignments";
+import Footer from "../components/Footer";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,7 +23,9 @@ const Home = () => {
       <HeroSection />
       <InfoSection {...homeObjOne} />
       <InfoSection {...homeObjTwo} />
-      <Projects {...projDataOne} />
+      <Projects {...githubBtnData} />
+      <Assignments {...githubBtnData} />
+      <Footer />
     </>
   );
 };
