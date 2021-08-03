@@ -47,6 +47,11 @@ export const AssignmentsCard = styled.div`
   padding: 30px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   transition: all 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.02);
+    transition: all 0.2s ease-in-out;
+  }
 `;
 
 export const AssignmentsIcon = styled.img`
@@ -80,10 +85,4 @@ export const BtnWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   margin: 20px;
-
-  &:hover {
-    transform: scale() (1.02);
-    transition: all 0.2s ease-in-out;
-    cursor: pointer;
-  }
 `;

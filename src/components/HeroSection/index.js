@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import Video from "../../videos/video.mp4";
-import { Button } from "../Constants/ButtonElements";
 import {
   HeroContainer,
   HeroBg,
@@ -8,18 +8,11 @@ import {
   HeroContent,
   HeroH1,
   HeroP,
-  HeroBtnWrapper,
-  ArrowForward,
-  ArrowRight,
+  HeroIcons,
+  HeroIconLink,
 } from "./HeroElements";
 
 const HeroSection = () => {
-  const [hover, setHover] = useState(false);
-
-  const onHover = () => {
-    setHover(!hover);
-  };
-
   return (
     <HeroContainer>
       <HeroBg>
@@ -33,16 +26,20 @@ const HeroSection = () => {
           This is where I will be hosting all my personal projects and
           university assignments.
         </HeroP>
-        <HeroBtnWrapper>
-          <Button
-            to="contact"
-            onMouseEnter={onHover}
-            onMouseLeave={onHover}
-            primary="true"
-            dark="true">
-            Contact Me {hover ? <ArrowForward /> : <ArrowRight />}
-          </Button>
-        </HeroBtnWrapper>
+        <HeroIcons>
+          <HeroIconLink
+            href="https://github.com/LakshanMartin"
+            target="_blank"
+            aria-label="GitHub">
+            <FaGithub />
+          </HeroIconLink>
+          <HeroIconLink
+            href="https://linkedin.com"
+            target="_blank"
+            aria-label="Linkedin">
+            <FaLinkedin />
+          </HeroIconLink>
+        </HeroIcons>
       </HeroContent>
     </HeroContainer>
   );

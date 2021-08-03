@@ -26,6 +26,7 @@ const InfoSection = ({
   darkText,
   description,
   buttonLabel,
+  buttonLink,
   img,
   alt,
   primary,
@@ -44,6 +45,9 @@ const InfoSection = ({
                 <Subtitle darkText={darkText}>{description}</Subtitle>
                 <BtnWrapper>
                   <Button
+                    href={buttonLink}
+                    target="_blank"
+                    style={{ textDecoration: "none" }}
                     to="home"
                     smooth={true}
                     duration={500}

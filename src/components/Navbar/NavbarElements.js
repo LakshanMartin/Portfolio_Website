@@ -90,31 +90,27 @@ export const NavLinks = styled(LinkScroll)`
   }
 `;
 
-export const NavBtn = styled.nav`
+export const NavIcons = styled.div`
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  width: 100px;
 
   @media screen and (max-width: 768px) {
     display: none;
   }
+
+  @media screen and (max-width: 800px) {
+    width: 75px;
+  }
 `;
 
-export const NavBtnLink = styled(LinkRouter)`
-  border-radius: 50px;
-  background: #01bf71;
-  white-space: nowrap;
-  padding: 10px 22px;
-  color: #010606;
-  font-size: 16px;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-  text-decoration: none;
+export const NavIconLink = styled.a`
+  color: #fff;
+  font-size: 30px;
 
   &:hover {
-    transition: all 0.2s ease-in-out;
-    background: #fff;
-    color: #010606;
+    transform: scale(1.2);
+    cursor: pointer;
   }
 `;

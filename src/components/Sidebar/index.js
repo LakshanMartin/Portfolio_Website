@@ -1,4 +1,5 @@
 import React from "react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import {
   SidebarContainer,
   Icon,
@@ -6,8 +7,9 @@ import {
   SidebarWrapper,
   SidebarMenu,
   SidebarLink,
-  SidebarBtnWrapper,
-  SidebarRoute,
+  SidebarIconsWrapper,
+  SidebarIcons,
+  SidebarIconLink,
 } from "./SidebarElements";
 
 const Sidebar = ({ isOpen, toggle }) => {
@@ -21,6 +23,9 @@ const Sidebar = ({ isOpen, toggle }) => {
           <SidebarLink to="about" onClick={toggle}>
             About Me
           </SidebarLink>
+          <SidebarLink to="experience" onClick={toggle}>
+            Experience
+          </SidebarLink>
           <SidebarLink to="projects" onClick={toggle}>
             Personal Projects
           </SidebarLink>
@@ -28,9 +33,22 @@ const Sidebar = ({ isOpen, toggle }) => {
             Uni Assignments
           </SidebarLink>
         </SidebarMenu>
-        <SidebarBtnWrapper>
-          <SidebarRoute to="/contact">Contact Me</SidebarRoute>
-        </SidebarBtnWrapper>
+        <SidebarIconsWrapper>
+          <SidebarIcons>
+            <SidebarIconLink
+              href="https://github.com/LakshanMartin"
+              target="_blank"
+              aria-label="GitHub">
+              <FaGithub />
+            </SidebarIconLink>
+            <SidebarIconLink
+              href="https://linkedin.com"
+              target="_blank"
+              aria-label="Linkedin">
+              <FaLinkedin />
+            </SidebarIconLink>
+          </SidebarIcons>
+        </SidebarIconsWrapper>
       </SidebarWrapper>
     </SidebarContainer>
   );

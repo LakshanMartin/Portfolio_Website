@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaGithub, FaLinkedin } from "react-icons/fa";
 import { animateScroll as scroll } from "react-scroll";
 import {
   Nav,
@@ -9,8 +9,8 @@ import {
   NavMenu,
   NavItem,
   NavLinks,
-  NavBtn,
-  NavBtnLink,
+  NavIcons,
+  NavIconLink,
 } from "./NavbarElements";
 
 const scrollToTop = () => {
@@ -48,24 +48,58 @@ const Navbar = ({ toggle }) => {
                 duration={500}
                 spy={true}
                 exact="true"
-                offset={-80}
-                activeClass="active">
+                offset={-80}>
                 About Me
               </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="experience">Experience</NavLinks>
+              <NavLinks
+                to="experience"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-80}>
+                Experience
+              </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="projects">Personal Projects</NavLinks>
+              <NavLinks
+                to="projects"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-80}>
+                Personal Projects
+              </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="assignments">Uni Assignments</NavLinks>
+              <NavLinks
+                to="assignments"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-80}>
+                Uni Assignments
+              </NavLinks>
             </NavItem>
           </NavMenu>
-          <NavBtn>
-            <NavBtnLink to="/contact">Contact Me</NavBtnLink>
-          </NavBtn>
+          <NavIcons>
+            <NavIconLink
+              href="https://github.com/LakshanMartin"
+              target="_blank"
+              aria-label="GitHub">
+              <FaGithub />
+            </NavIconLink>
+            <NavIconLink
+              href="https://linkedin.com"
+              target="_blank"
+              aria-label="Linkedin">
+              <FaLinkedin />
+            </NavIconLink>
+          </NavIcons>
         </NavbarContainer>
       </Nav>
     </>

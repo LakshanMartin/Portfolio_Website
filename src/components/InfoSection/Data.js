@@ -1,3 +1,5 @@
+import CV from "../../pages/CV.pdf";
+
 export const homeObjOne = {
   id: "about",
   lightBg: false,
@@ -6,8 +8,10 @@ export const homeObjOne = {
   topLine: "About Me",
   headLine: "Student at Curtin University",
   description:
-    "I'm currently studying a Bachelor of Science(Computing) specialising in the field of Software Engineering",
-  buttonLabel: "Contact Me",
+    "I'm currently studying a Bachelor of Science(Computing) as a part of the Software Engineering stream",
+  buttonLabel: "Course Structure",
+  buttonLink:
+    "https://archive.handbook.curtin.edu.au/december2018/courses/32/320703.html",
   imgStart: false,
   img: require("../../images/studying.svg").default,
   alt: "Studying",
@@ -26,6 +30,7 @@ export const homeObjTwo = {
   description:
     "Prior to studying Software Engineering, I was a Tax Accountant for 3 \xBD years",
   buttonLabel: "My R\xE9sum\xE9",
+  buttonLink: CV,
   imgStart: true,
   img: require("../../images/resume.svg").default,
   alt: "Resume",

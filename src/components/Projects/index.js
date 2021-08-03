@@ -14,12 +14,6 @@ import {
   BtnWrapper,
 } from "./ProjectsElements";
 
-//Method to open links in new tab
-const newTabProjLink = (url) => {
-  const newWindow = window.open(url, "_blank", "noopener", "noreferrer");
-  if (newWindow) newWindow.opener = null;
-};
-
 const Projects = ({ buttonLabel, primary, dark, dark2 }) => {
   return (
     <ProjectsContainer id="projects">
@@ -38,12 +32,8 @@ const Projects = ({ buttonLabel, primary, dark, dark2 }) => {
             <Button
               //Including href just to show web address on hover
               href="https://github.com/LakshanMartin/Weekly_Specials"
+              target="_blank"
               style={{ textDecoration: "none" }}
-              onClick={() =>
-                newTabProjLink(
-                  "https://github.com/LakshanMartin/Weekly_Specials"
-                )
-              }
               to="home"
               smooth={true}
               duration={500}
@@ -70,10 +60,8 @@ const Projects = ({ buttonLabel, primary, dark, dark2 }) => {
             <Button
               //Including href just to show web address on hover
               href="https://github.com/LakshanMartin/CTF_WriteUps"
+              target="_blank"
               style={{ textDecoration: "none" }}
-              onClick={() =>
-                newTabProjLink("https://github.com/LakshanMartin/CTF_WriteUps")
-              }
               to="home"
               smooth={true}
               duration={500}
@@ -92,19 +80,16 @@ const Projects = ({ buttonLabel, primary, dark, dark2 }) => {
           <ProjectsH2>Website Portfolio</ProjectsH2>
           <ProjectsP>
             I created this website as a way to learn JavaScript and the React
-            library. I have expectations to utilise this website to host and
-            better display my Project Portfolio.
+            library. This site was my first venture into Web Development. I have
+            expectations to utilise this website to host and better display my
+            Project Portfolio.
           </ProjectsP>
           <BtnWrapper>
             <Button
               //Including href just to show web address on hover
               href="https://github.com/LakshanMartin/Portfolio_Website"
+              target="_blank"
               style={{ textDecoration: "none" }}
-              onClick={() =>
-                newTabProjLink(
-                  "https://github.com/LakshanMartin/Portfolio_Website"
-                )
-              }
               to="home"
               smooth={true}
               duration={500}

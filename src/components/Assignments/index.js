@@ -14,12 +14,6 @@ import {
   BtnWrapper,
 } from "./AssignmentsElements";
 
-//Method to open links in new tab
-const newTabProjLink = (url) => {
-  const newWindow = window.open(url, "_blank", "noopener", "noreferrer");
-  if (newWindow) newWindow.opener = null;
-};
-
 const Assignments = ({ buttonLabel, primary, dark, dark2 }) => {
   return (
     <AssignmentsContainer id="assignments">
@@ -29,21 +23,16 @@ const Assignments = ({ buttonLabel, primary, dark, dark2 }) => {
           <AssignmentsIcon src={RoverIcon} />
           <AssignmentsH2>Mars Rover Control System</AssignmentsH2>
           <AssignmentsP>
-            I was tasked with developing a control system for a Mars Rover.
-            Various commands were to be relayed to the control system through an
-            externally developed API. This provided a good experience for
-            programming around an API.
+            Implementation of various design patterns. Commands were to be
+            relayed to the control system through an externally developed API.
+            This provided a good experience for programming around an API.
           </AssignmentsP>
           <BtnWrapper>
             <Button
               //Including href just to show web address on hover
               href="https://github.com/LakshanMartin/OOSE/tree/master/Assignments/Assignment2/MarsRover"
+              target="_blank"
               style={{ textDecoration: "none" }}
-              onClick={() =>
-                newTabProjLink(
-                  "https://github.com/LakshanMartin/OOSE/tree/master/Assignments/Assignment2/MarsRover"
-                )
-              }
               to="home"
               smooth={true}
               duration={500}
@@ -70,12 +59,8 @@ const Assignments = ({ buttonLabel, primary, dark, dark2 }) => {
             <Button
               //Including href just to show web address on hover
               href="https://github.com/LakshanMartin/OOSE/tree/master/Assignments/Assignment1/ElectricityNetwork"
+              target="_blank"
               style={{ textDecoration: "none" }}
-              onClick={() =>
-                newTabProjLink(
-                  "https://github.com/LakshanMartin/OOSE/tree/master/Assignments/Assignment1/ElectricityNetwork"
-                )
-              }
               to="home"
               smooth={true}
               duration={500}
@@ -102,12 +87,8 @@ const Assignments = ({ buttonLabel, primary, dark, dark2 }) => {
             <Button
               //Including href just to show web address on hover
               href="https://github.com/LakshanMartin/HCI/tree/master/ZARA"
+              target="_blank"
               style={{ textDecoration: "none" }}
-              onClick={() =>
-                newTabProjLink(
-                  "https://github.com/LakshanMartin/HCI/tree/master/ZARA"
-                )
-              }
               to="home"
               smooth={true}
               duration={500}
