@@ -1,6 +1,6 @@
 import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import Video from "../../videos/video.mp4";
+import Video from "../../videos/video2.mp4";
 import {
   HeroContainer,
   HeroBg,
