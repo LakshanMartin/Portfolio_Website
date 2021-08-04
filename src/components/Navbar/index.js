@@ -18,6 +18,7 @@ const scrollToTop = () => {
 };
 
 const Navbar = ({ toggle }) => {
+  // Change Navbar transparency at scroll position
   const [scrollNav, setScrollNav] = useState(false);
 
   const changeNav = () => {
@@ -30,6 +31,29 @@ const Navbar = ({ toggle }) => {
 
   useEffect(() => {
     window.addEventListener("scroll", changeNav);
+
+    return () => {
+      window.removeEventListener("scroll", changeNav);
+    };
+  });
+
+  // Show/Hide NavIcons at scroll position
+  const [showIcons, setShowIcons] = useState("hidden");
+
+  const iconsVis = () => {
+    if (window.scrollY >= 720) {
+      setShowIcons("visible");
+    } else {
+      setShowIcons("hidden");
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", iconsVis);
+
+    return () => {
+      window.removeEventListener("scroll", iconsVis);
+    };
   });
 
   return (
@@ -86,7 +110,7 @@ const Navbar = ({ toggle }) => {
               </NavLinks>
             </NavItem>
           </NavMenu>
-          <NavIcons>
+          <NavIcons style={{ visibility: showIcons }}>
             <NavIconLink
               href="https://github.com/LakshanMartin"
               target="_blank"
