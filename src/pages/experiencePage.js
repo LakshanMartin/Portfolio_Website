@@ -1,10 +1,13 @@
 import React from "react";
+import LinkInInfoSection from "../components/LinkInInfoSection";
+import { experience } from "../components/LinkInInfoSection/Data";
 
 const ExperiencePage = () => {
-  return;
-  <div>
-    <h1>Experience Page</h1>
-  </div>;
+  return (
+    <>
+      <LinkInInfoSection {...experience} />
+    </>
+  );
 };
 
 export default ExperiencePage;
