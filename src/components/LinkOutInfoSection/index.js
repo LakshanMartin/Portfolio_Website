@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "../Constants/ButtonElements";
+import { Button } from "../Constants/OutButtonElements";
 
 import {
   InfoContainer,
@@ -14,9 +14,9 @@ import {
   BtnWrapper,
   ImgWrapper,
   Img,
-} from "./InfoSectionElements";
+} from "./LinkOutInfoSectionElements";
 
-const InfoSection = ({
+const LinkOutSection = ({
   lightBg,
   id,
   imgStart,
@@ -47,8 +47,10 @@ const InfoSection = ({
                   <Button
                     href={buttonLink}
                     target="_blank"
-                    style={{ textDecoration: "none" }}
-                    to="home"
+                    style={{
+                      textDecoration: "none",
+                    }}
+                    to="/experiencePage"
                     smooth={true}
                     duration={500}
                     spy={true}
@@ -74,4 +76,4 @@ const InfoSection = ({
   );
 };
 
-export default InfoSection;
+export default LinkOutSection;

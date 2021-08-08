@@ -2,7 +2,7 @@ import React from "react";
 import AndroidIcon from "../../images/android.svg";
 import CTFIcon from "../../images/ctf.svg";
 import ReactIcon from "../../images/react.svg";
-import { Button } from "../Constants/ButtonElements";
+import { Button } from "../Constants/OutButtonElements";
 import {
   ProjectsContainer,
   ProjectsH1,
@@ -19,6 +19,34 @@ const Projects = ({ buttonLabel, primary, dark, dark2 }) => {
     <ProjectsContainer id="projects">
       <ProjectsH1>Personal Projects</ProjectsH1>
       <ProjectsWrapper>
+        <ProjectsCard>
+          <ProjectsIcon src={ReactIcon} />
+          <ProjectsH2>Website Portfolio</ProjectsH2>
+          <ProjectsP>
+            I created this website as a way to learn JavaScript and the React
+            library. This site was my first venture into Web Development. I have
+            expectations to utilise this website to host and better display my
+            Project Portfolio.
+          </ProjectsP>
+          <BtnWrapper>
+            <Button
+              //Including href just to show web address on hover
+              href="https://github.com/LakshanMartin/Portfolio_Website"
+              target="_blank"
+              style={{ textDecoration: "none" }}
+              to="home"
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact="true"
+              offset={-80}
+              primary={primary ? 1 : 0}
+              dark={dark ? 1 : 0}
+              dark2={dark2 ? 1 : 0}>
+              {buttonLabel}
+            </Button>
+          </BtnWrapper>
+        </ProjectsCard>
         <ProjectsCard>
           <ProjectsIcon src={AndroidIcon} />
           <ProjectsH2>Weekly Specials</ProjectsH2>
@@ -60,34 +88,6 @@ const Projects = ({ buttonLabel, primary, dark, dark2 }) => {
             <Button
               //Including href just to show web address on hover
               href="https://github.com/LakshanMartin/CTF_WriteUps"
-              target="_blank"
-              style={{ textDecoration: "none" }}
-              to="home"
-              smooth={true}
-              duration={500}
-              spy={true}
-              exact="true"
-              offset={-80}
-              primary={primary ? 1 : 0}
-              dark={dark ? 1 : 0}
-              dark2={dark2 ? 1 : 0}>
-              {buttonLabel}
-            </Button>
-          </BtnWrapper>
-        </ProjectsCard>
-        <ProjectsCard>
-          <ProjectsIcon src={ReactIcon} />
-          <ProjectsH2>Website Portfolio</ProjectsH2>
-          <ProjectsP>
-            I created this website as a way to learn JavaScript and the React
-            library. This site was my first venture into Web Development. I have
-            expectations to utilise this website to host and better display my
-            Project Portfolio.
-          </ProjectsP>
-          <BtnWrapper>
-            <Button
-              //Including href just to show web address on hover
-              href="https://github.com/LakshanMartin/Portfolio_Website"
               target="_blank"
               style={{ textDecoration: "none" }}
               to="home"

@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "../Constants/ButtonElements";
+import { Button } from "../Constants/OutButtonElements";
 import RoverIcon from "../../images/marsRover.png";
 import CityIcon from "../../images/city.svg";
 import ZaraIcon from "../../images/Zara_Logo.svg";

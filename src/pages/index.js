@@ -2,12 +2,14 @@ import React, { useState } from "react";
 import Sidebar from "../components/Sidebar";
 import Navbar from "../components/Navbar";
 import HeroSection from "../components/HeroSection";
-import InfoSection from "../components/InfoSection";
-import { homeObjOne, homeObjTwo } from "../components/InfoSection/Data";
+import LinkOutInfoSection from "../components/LinkOutInfoSection";
+import { about } from "../components/LinkOutInfoSection/Data";
 import Projects from "../components/Projects";
 import { githubBtnData } from "../components/Constants/GitHubBtnData";
 import Assignments from "../components/Assignments";
 import Footer from "../components/Footer";
+import LinkInInfoSection from "../components/LinkInInfoSection";
+import { experience } from "../components/LinkInInfoSection/Data";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,8 +23,8 @@ const Home = () => {
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <HeroSection />
-      <InfoSection {...homeObjOne} />
-      <InfoSection {...homeObjTwo} />
+      <LinkOutInfoSection {...about} />
+      <LinkInInfoSection {...experience} />
       <Projects {...githubBtnData} />
       <Assignments {...githubBtnData} />
       <Footer />
