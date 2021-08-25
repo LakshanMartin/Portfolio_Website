@@ -28,7 +28,7 @@ export const experience = {
   topLine: "Experience",
   headLine: "Former Tax Accountant",
   description:
-    "Prior to studying Software Engineering, I was a Tax Accountant for 3 \xBD years",
+    "Prior to studying Software Engineering, I was a Tax Accountant for 4 \xBD years",
   buttonLabel: "My R\xE9sum\xE9",
   buttonLink: "https://google.com", //CV,
   imgStart: true,
