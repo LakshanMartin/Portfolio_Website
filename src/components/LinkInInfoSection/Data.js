@@ -6,7 +6,7 @@ export const experience = {
   topLine: "Experience",
   headLine: "Former Tax Accountant",
   description:
-    "Prior to studying Software Engineering, I was a Tax Accountant for 3 \xBD years",
+    "Prior to studying Software Engineering, I was a Tax Accountant for 4 \xBD years",
   buttonLabel: "Further Details",
   imgStart: true,
   img: require("../../images/resume.svg").default,
