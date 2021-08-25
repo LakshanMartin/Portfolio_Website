@@ -34,7 +34,7 @@ const HeroSection = () => {
             <FaGithub />
           </HeroIconLink>
           <HeroIconLink
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/lakshan-martin/"
             target="_blank"
             aria-label="Linkedin">
             <FaLinkedin />

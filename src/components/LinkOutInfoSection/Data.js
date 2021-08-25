@@ -1,4 +1,4 @@
-import CV from "../../pages/CV.pdf";
+// import CV from "../../pages/CV.pdf";
 
 export const about = {
   id: "about",
@@ -30,7 +30,7 @@ export const experience = {
   description:
     "Prior to studying Software Engineering, I was a Tax Accountant for 3 \xBD years",
   buttonLabel: "My R\xE9sum\xE9",
-  buttonLink: CV,
+  buttonLink: "https://google.com", //CV,
   imgStart: true,
   img: require("../../images/resume.svg").default,
   alt: "Resume",
