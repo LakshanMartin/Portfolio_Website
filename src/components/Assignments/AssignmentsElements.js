@@ -1,19 +1,20 @@
 import styled from "styled-components";
 
 export const AssignmentsContainer = styled.div`
-  height: 1200px;
+  height: auto; //1200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background: #010606;
+  padding: 60px 0px;
 
   @media screen and (max-width: 768px) {
-    height: 1550px;
+    height: auto; //1550px;
   }
 
   @media screen and (max-width: 480px) {
-    height: 1600px;
+    height: auto; //1600px;
   }
 `;
 

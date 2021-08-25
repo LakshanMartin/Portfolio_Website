@@ -3,6 +3,8 @@ import { Button } from "../Constants/OutButtonElements";
 import RoverIcon from "../../images/marsRover.png";
 import CityIcon from "../../images/city.svg";
 import ZaraIcon from "../../images/Zara_Logo.svg";
+import Crypto1 from "../../images/crypto1.png";
+import Crypto2 from "../../images/crypto2.png";
 import {
   AssignmentsContainer,
   AssignmentsH1,
@@ -13,6 +15,14 @@ import {
   AssignmentsP,
   BtnWrapper,
 } from "./AssignmentsElements";
+
+// Function to add line breaks into text
+function NewlineText(props) {
+  const text = props.text;
+  const newText = text.split("\n").map((str) => <p>{str}</p>);
+
+  return newText;
+}
 
 const Assignments = ({ buttonLabel, primary, dark, dark2 }) => {
   return (
@@ -87,6 +97,72 @@ const Assignments = ({ buttonLabel, primary, dark, dark2 }) => {
             <Button
               //Including href just to show web address on hover
               href="https://github.com/LakshanMartin/HCI/tree/master/ZARA"
+              target="_blank"
+              style={{ textDecoration: "none" }}
+              to="home"
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact="true"
+              offset={-80}
+              primary={primary ? 1 : 0}
+              dark={dark ? 1 : 0}
+              dark2={dark2 ? 1 : 0}>
+              {buttonLabel}
+            </Button>
+          </BtnWrapper>
+        </AssignmentsCard>
+        <AssignmentsCard>
+          <AssignmentsIcon src={Crypto1} />
+          <AssignmentsH2>RSA Encryption & Euclidean Algorithm</AssignmentsH2>
+          <AssignmentsP>
+            <NewlineText
+              text={
+                "This assignment consisted of two components: " +
+                "\n(1) Implementation of the Euclidean Algorithm to verify " +
+                "whether two integers coprime. \n(2) Implementation of the " +
+                "RSA Encryption Algorithm where the program reads a text file " +
+                "and encrypts and then decrypts it."
+              }
+            />
+          </AssignmentsP>
+          <BtnWrapper>
+            <Button
+              //Including href just to show web address on hover
+              href="https://github.com/LakshanMartin/FCC/tree/master/Assignment2"
+              target="_blank"
+              style={{ textDecoration: "none" }}
+              to="home"
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact="true"
+              offset={-80}
+              primary={primary ? 1 : 0}
+              dark={dark ? 1 : 0}
+              dark2={dark2 ? 1 : 0}>
+              {buttonLabel}
+            </Button>
+          </BtnWrapper>
+        </AssignmentsCard>
+        <AssignmentsCard>
+          <AssignmentsIcon src={Crypto2} />
+          <AssignmentsH2>Affine Cipher & DES Algorithm</AssignmentsH2>
+          <AssignmentsP>
+            <NewlineText
+              text={
+                "This assignment consisted of two components: " +
+                "\n(1) Implementation of a revised Affine Cipher using MOD 27 to " +
+                "encrypt and decrypt a text file. \n(2) Implementation of the " +
+                "DES Algorithm to demonstrate key generation and padding/" +
+                "chopping of the encrypted text file."
+              }
+            />
+          </AssignmentsP>
+          <BtnWrapper>
+            <Button
+              //Including href just to show web address on hover
+              href="https://github.com/LakshanMartin/FCC/tree/master/Assignment1"
               target="_blank"
               style={{ textDecoration: "none" }}
               to="home"

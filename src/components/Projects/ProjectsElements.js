@@ -1,12 +1,13 @@
 import styled from "styled-components";
 
 export const ProjectsContainer = styled.div`
-  height: 1200px;
+  height: auto; //1200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background: #010606;
+  padding-top: 60px;
 
   @media screen and (max-width: 768px) {
     height: 1550px;
