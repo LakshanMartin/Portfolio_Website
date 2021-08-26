@@ -19,6 +19,10 @@ export const ExpWrapper = styled.div`
   margin-left: auto;
   padding: 0 24px;
   justify-content: center;
+
+  @media screen and (max-width: 768px) {
+    height: auto;
+  }
 `;
 
 export const ExpRow = styled.div`
