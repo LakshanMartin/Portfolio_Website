@@ -118,9 +118,8 @@ const Assignments = ({ buttonLabel, primary, dark, dark2 }) => {
           <AssignmentsP>
             <NewlineText
               text={
-                "This assignment consisted of two components: " +
-                "\n(1) Implementation of the Euclidean Algorithm to verify " +
-                "whether two integers are coprime. \n(2) Implementation of the " +
+                "Implementation of the Euclidean Algorithm to verify " +
+                "whether two integers are coprime. \n- AND - \nImplementation of the " +
                 "RSA Encryption Algorithm where the program reads a text file " +
                 "and encrypts and then decrypts it."
               }
@@ -151,9 +150,8 @@ const Assignments = ({ buttonLabel, primary, dark, dark2 }) => {
           <AssignmentsP>
             <NewlineText
               text={
-                "This assignment consisted of two components: " +
-                "\n(1) Implementation of a revised Affine Cipher using MOD 27 to " +
-                "encrypt and decrypt a text file. \n(2) Implementation of the " +
+                "Implementation of a revised Affine Cipher using MOD 27 to " +
+                "encrypt and decrypt a text file. \n- AND - \nImplementation of the " +
                 "DES Algorithm to demonstrate key generation and padding/" +
                 "chopping of an encrypted text file."
               }

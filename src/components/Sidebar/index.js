@@ -1,5 +1,6 @@
 import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { LinkedInLink, GitHubLink } from "../Constants/Data";
 import {
   SidebarContainer,
   Icon,
@@ -36,13 +37,13 @@ const Sidebar = ({ isOpen, toggle }) => {
         <SidebarIconsWrapper>
           <SidebarIcons>
             <SidebarIconLink
-              href="https://github.com/LakshanMartin"
+              href={GitHubLink}
               target="_blank"
               aria-label="GitHub">
               <FaGithub />
             </SidebarIconLink>
             <SidebarIconLink
-              href="https://linkedin.com"
+              href={LinkedInLink}
               target="_blank"
               aria-label="Linkedin">
               <FaLinkedin />

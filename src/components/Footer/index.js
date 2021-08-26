@@ -1,6 +1,7 @@
 import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { animateScroll as scroll } from "react-scroll";
+import { LinkedInLink, GitHubLink } from "../Constants/Data";
 import {
   FooterContainer,
   FooterWrapper,
@@ -21,14 +22,11 @@ const Footer = () => {
         <FooterLogo onClick={scrollToTop}>Lucky</FooterLogo>
         <FooterYear>{new Date().getFullYear()}</FooterYear>
         <FooterIcons>
-          <FooterIconLink
-            href="https://github.com/LakshanMartin"
-            target="_blank"
-            aria-label="GitHub">
+          <FooterIconLink href={GitHubLink} target="_blank" aria-label="GitHub">
             <FaGithub />
           </FooterIconLink>
           <FooterIconLink
-            href="https://www.linkedin.com/in/lakshan-martin/"
+            href={LinkedInLink}
             target="_blank"
             aria-label="Linkedin">
             <FaLinkedin />

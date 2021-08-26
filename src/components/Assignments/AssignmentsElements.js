@@ -53,6 +53,14 @@ export const AssignmentsCard = styled.div`
     transform: scale(1.02);
     transition: all 0.2s ease-in-out;
   }
+
+  @media screen and (max-width: 768px) {
+    height: auto;
+  }
+
+  @media screen and (max-width: 480px) {
+    height: auto;
+  }
 `;
 
 export const AssignmentsIcon = styled.img`

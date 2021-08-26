@@ -5,7 +5,7 @@ import HeroSection from "../components/HeroSection";
 import LinkOutInfoSection from "../components/LinkOutInfoSection";
 import { about, experience } from "../components/LinkOutInfoSection/Data";
 import Projects from "../components/Projects";
-import { githubBtnData } from "../components/Constants/GitHubBtnData";
+import { githubBtnData } from "../components/Constants/Data";
 import Assignments from "../components/Assignments";
 import Footer from "../components/Footer";
 // import LinkInInfoSection from "../components/LinkInInfoSection";

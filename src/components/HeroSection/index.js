@@ -1,6 +1,7 @@
 import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import Video from "../../videos/video2.mp4";
+import { LinkedInLink, GitHubLink } from "../Constants/Data";
 import {
   HeroContainer,
   HeroBg,
@@ -27,14 +28,11 @@ const HeroSection = () => {
           university assignments.
         </HeroP>
         <HeroIcons>
-          <HeroIconLink
-            href="https://github.com/LakshanMartin"
-            target="_blank"
-            aria-label="GitHub">
+          <HeroIconLink href={GitHubLink} target="_blank" aria-label="GitHub">
             <FaGithub />
           </HeroIconLink>
           <HeroIconLink
-            href="https://www.linkedin.com/in/lakshan-martin/"
+            href={LinkedInLink}
             target="_blank"
             aria-label="Linkedin">
             <FaLinkedin />

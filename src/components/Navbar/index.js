@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { FaBars, FaGithub, FaLinkedin } from "react-icons/fa";
 import { animateScroll as scroll } from "react-scroll";
+import { LinkedInLink, GitHubLink } from "../Constants/Data";
 import {
   Nav,
   NavbarContainer,
@@ -111,14 +112,11 @@ const Navbar = ({ toggle }) => {
             </NavItem>
           </NavMenu>
           <NavIcons style={{ visibility: showIcons }}>
-            <NavIconLink
-              href="https://github.com/LakshanMartin"
-              target="_blank"
-              aria-label="GitHub">
+            <NavIconLink href={GitHubLink} target="_blank" aria-label="GitHub">
               <FaGithub />
             </NavIconLink>
             <NavIconLink
-              href="https://www.linkedin.com/in/lakshan-martin/"
+              href={LinkedInLink}
               target="_blank"
               aria-label="Linkedin">
               <FaLinkedin />
