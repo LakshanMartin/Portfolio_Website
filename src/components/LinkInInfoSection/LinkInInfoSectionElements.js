@@ -21,6 +21,7 @@ export const ExpWrapper = styled.div`
   justify-content: center;
 
   @media screen and (max-width: 768px) {
+    padding-top: 80px;
     height: auto;
   }
 `;

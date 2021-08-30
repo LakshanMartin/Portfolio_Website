@@ -11,10 +11,12 @@ export const AssignmentsContainer = styled.div`
 
   @media screen and (max-width: 768px) {
     height: auto; //1550px;
+    padding-top: 100px;
   }
 
   @media screen and (max-width: 480px) {
     height: auto; //1600px;
+    padding-top: 150px;
   }
 `;
 
