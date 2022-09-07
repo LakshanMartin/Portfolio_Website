@@ -1,4 +1,4 @@
-import CV from "../../pages/CV-2021.pdf";
+import CV from "../../pages/CV-2022.pdf";
 
 export const about = {
   id: "about",
